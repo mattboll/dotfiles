@@ -43,7 +43,7 @@ alias st='git status'
 
 # GF Utils
 alias gfk='kill -9 `jps | grep ASMain | cut -d" " -f1`'
-alias gfL='tail -f /opt/glassfishv3/glassfish/domains/domain1/logs/server.log'
+alias gfL='tail -f /opt/glassfishv3/glassfish/domains/nolr/logs/server.log'
 alias gfS='/opt/glassfishv3/bin/asadmin start-domain nolr'
 # history grep
 alias hist="history | grep "

@@ -37,15 +37,15 @@ alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
 
-# Rails
-alias c='echo Opening Rails console...; if [ -f script/console ]; then script/console; else script/rails console; fi'
-alias s='echo Launching Rails server...; if [ -f script/server ]; then script/server; else script/rails server; fi'
-alias g='rails generate'
-alias annot='if which annotate > /dev/null; then echo Annotate models; annotate; fi'
-alias rdm='rake db:migrate && annot'
-alias rdr='rake db:migrate:redo && annot'
-alias seed='rake db:seed'
 
 # Git
 alias st='git status'
 
+# GF Utils
+alias gfk='kill -9 `jps | grep ASMain | cut -d" " -f1`'
+alias gfL='tail -f /opt/glassfishv3/glassfish/domains/domain1/logs/server.log'
+alias gfS='/opt/glassfishv3/bin/asadmin start-domain nolr'
+# history grep
+alias hist="history | grep "
+# workspace
+alias ws='cd /Volumes/workspace/srm-noLR'

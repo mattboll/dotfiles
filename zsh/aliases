@@ -40,6 +40,9 @@ alias -g .....='../../../..'
 
 # Git
 alias st='git status'
+alias svnpull='git svnpull'
+alias svnpush='git svnpush'
+alias climerge='git climerge'
 
 # GF Utils
 alias gfk='kill -9 `jps | grep ASMain | cut -d" " -f1`'

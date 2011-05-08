@@ -58,6 +58,10 @@ COLOR_CYAN='\033[0;36m'
 COLOR_LIGHTCYAN='\033[1;36m'
 COLOR_DEFAULT='\033[0m'
 
+#Dummy function to circumvent lack of git-completion
+function __git_ps1 () {
+  echo -e "";
+}
 
 # Function to set prompt_command to.
 function promptcmd () {
@@ -283,7 +287,9 @@ fi
 if [ -f /usr/bin/vim ]; then
 	alias vi='vim'
 fi
-source ~/.git-completion
+if [ -f ~/.git-completion ]; then 
+  source ~/.git-completion;
+fi;
 export HISTSIZE=10000
 export EDITOR=vim
 alias hist="history | grep "

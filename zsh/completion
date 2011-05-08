@@ -2,7 +2,7 @@ fpath=(~/.zsh/functions $fpath)
 autoload -U compinit
 autoload -U ~/.zsh/functions/*(:t)
 zmodload -i zsh/complist
-compinit
+compinit -C
 
 # Enable completion caching, use rehash to clear
 zstyle ':completion:*' use-cache on

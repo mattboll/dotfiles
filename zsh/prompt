@@ -46,7 +46,7 @@ function precmd {
 # Change user color if root
 if [ $UID -eq 0 ]; then usercolor="red"; else usercolor="green"; fi
 # Change the host color if connected on remote
-if [ $HOST = `hostname` ]; then hostcolor="green"; else hostcolor="cyan"; fi
+if [ -n ${SSH_CLIENT} ] || [ -n ${SSH2_CLIENT} ]; then  hostcolor="green"; else hostcolor="cyan"; fi
 # Finally, set the prompt
 local user_and_host="%{$fg_bold[$usercolor]%}%n%{$reset_color%}@%{$fg_bold[$hostcolor]%}%m%{$reset_color%}"
 local the_date="%{$fg_bold[blue]%}%D{%H:%M:%S}%{$reset_color%}"

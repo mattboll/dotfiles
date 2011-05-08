@@ -38,7 +38,6 @@
 #       prompt (Day changed to...). 
 #   2.  Command is added to the history file each time you hit enter so its
 #       available to all shells.
-alias sed='gsed';
 
 # Configure Colors:
 COLOR_WHITE='\033[1;37m'

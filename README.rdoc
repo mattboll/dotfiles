@@ -1,4 +1,5 @@
 = My Dot Files
+Forked from tomsquest's dotfiles, thanks a lot for the working base.
 
 My config files, heavily commented for the most part (Zsh).
 
@@ -17,6 +18,10 @@ My config files, heavily commented for the most part (Zsh).
 
 Heavily commented ZSH configuration : config, completion, prompt, key bindings...
 
+=== Bashrc
+
+Old and not so portable bashrc file, a lot of proprietary path and aliases. I have to work on it to make it versatile.
+
 ==== Prompt
 
 The prompt is simple and effective. There is:
@@ -24,8 +29,9 @@ The prompt is simple and effective. There is:
 - The path is truncated if too long for the terminal width
 - The return code of the last executed command is displayed
 - The Git status is displayed at the right of the screen (thanks to https://github.com/olivierverdier/zsh-git-prompt)
+- Prompt color turns red when root, green otherwise. Host color turns cyan when remoting, green otherwise.
 
-Exemple
+Example
 
   tom@tom 06:42:21 ~/.dotfiles/zsh --------
   $                               (master…)
@@ -38,7 +44,7 @@ Exemple
 - Gem
 - Rake
 - Rvm
-
+- Maven
 
 ==== Functions
 

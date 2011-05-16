@@ -44,6 +44,7 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/s
 # Completion for mvn (see https://github.com/nicoulaj/maven-zsh-completion)
 maven_plugins=(
     'versions'
+    'jnlp'
     'android:Maven Plugin for Android'
 )
 zstyle ':completion:*:mvn:*' plugins $maven_plugins

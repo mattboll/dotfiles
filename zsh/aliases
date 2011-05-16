@@ -26,7 +26,7 @@ alias -g L='| less'
 alias -g G='| grep -in'
 
 # Add an 'alert' alias for long running commands.  Use like so: sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Beep alias
 alias beep='beep -f 5000 -r 2'
@@ -36,7 +36,8 @@ alias '..'='cd ..'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
-
+# zsh
+alias szrc="source ~/.zshrc"
 
 # Git
 alias st='git status'
@@ -46,9 +47,12 @@ alias climerge='git climerge'
 
 # GF Utils
 alias gfk='kill -9 `jps | grep ASMain | cut -d" " -f1`'
-alias gfL='tail -f /opt/glassfishv3/glassfish/domains/nolr/logs/server.log'
-alias gfS='/opt/glassfishv3/bin/asadmin start-domain nolr'
+alias gfl='tail -f /opt/glassfishv3/glassfish/domains/nolr/logs/server.log'
+alias gfs='/opt/glassfishv3/bin/asadmin start-domain nolr'
 # history grep
 alias hist="history | grep "
 # workspace
 alias ws='cd /Volumes/workspace/srm-noLR'
+alias alter="mysql5 -f -uroot srm < /Volumes/workspace/srm-noLR/SQLdumps/alter.sql"
+alias mvnci="mvn clean install"
+alias mvncis="mvn clean install -Dmaven.test.skip=true"

@@ -1,0 +1,2 @@
+alias sshc="ssh 10.1.2.12"
+alias log='log4tail -r'

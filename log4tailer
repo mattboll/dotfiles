@@ -13,8 +13,8 @@
 # fatal = red, on_green
 # info = green
 # debug = black
-#severe = red
-#debug = black, on_white
+severe = red
+finest = black, on_white
 # ================================
 # targets: which lines do you want 
 # to emphasize by using regexes

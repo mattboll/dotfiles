@@ -45,14 +45,10 @@ alias svnpull='git svnpull'
 alias svnpush='git svnpush'
 alias climerge='git climerge'
 
-# GF Utils
-alias gfk='kill -9 `jps | grep ASMain | cut -d" " -f1`'
-alias gfl='tail -f /opt/glassfishv3/glassfish/domains/nolr/logs/server.log'
-alias gfs='/opt/glassfishv3/bin/asadmin start-domain nolr'
 # history grep
 alias hist="history | grep "
-# workspace
-alias ws='cd /Volumes/workspace/srm-noLR'
-alias alter="mysql5 -f -uroot srm < /Volumes/workspace/srm-noLR/SQLdumps/alter.sql"
-alias mvnci="mvn clean install"
-alias mvncis="mvn clean install -Dmaven.test.skip=true"
+
+# finally we source host specific aliases
+if [ -f ~/.zsh/aliases.${HOST} ]; then
+  source ~/.zsh/aliases.${HOST};
+fi

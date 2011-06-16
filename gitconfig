@@ -1,0 +1,24 @@
+[color]
+	ui = auto
+[alias]
+    amend = commit --amend
+    st = status
+    who = shortlog -sne
+    oneline = log --pretty=oneline --abbrev-commit --graph
+    changes = diff --name-status
+    dic = diff --cached
+    diffstat = diff --stat
+    svnpull = svn rebase
+    svnpush = svn dcommit
+    undo = git reset --soft HEAD^
+    addm = !git-ls-files -m -z | xargs -0 git-add && git status                     # ajouter les fichiers modifiés.
+    addu = !git-ls-files -o --exclude-standard -z | xargs -0 git-add && git status  # ajouter les fichiers inconnus.
+    rmm  = !git ls-files -d -z | xargs -0 git-rm && git status                      # supprimer les fichiers marqués
+                                                                                    # comme effacés.
+    climerge = mergetool -t diffmerge
+[user]
+	email = cedric@gatay.fr
+	name = Cedric Gatay
+[mergetool "diffmerge"]
+  cmd = diffmerge.sh --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"
+	trustExitCode = false

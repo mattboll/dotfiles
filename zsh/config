@@ -81,6 +81,12 @@ chpwd() {
       ;;
   esac
 }
-# Set the current directory on load
-chpwd
+# Set the current xterm title to : user@host: **command**
+case $TERM in
+    xterm*)
+      preexec () {
+        print -Pn "\e]0;%n@%m: ** $1 **\a"
+      } 
+    ;;
+esac
 

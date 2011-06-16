@@ -39,6 +39,8 @@ function precmd {
     else
     	PR_FILLBAR="\${(l.(($TERMWIDTH - ($promptsize + $pwdsize)))..-.)}"
     fi
+    # set xterm title according to running command 
+    chpwd
 }
 
 # Change user color if root

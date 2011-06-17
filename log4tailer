@@ -15,6 +15,9 @@
 # debug = black
 severe = red
 finest = black, on_white
+color.JRebel=black, on_white
+color.I18nEjbImpl=red, on_green
+color.1.4.17=skip
 # ================================
 # targets: which lines do you want 
 # to emphasize by using regexes

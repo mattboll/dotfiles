@@ -66,6 +66,7 @@ A mostly-complete gitignore.
 
 == Sources
 
+- https://github.com/tomsquest/dotfiles
 - https://github.com/ryanb/dotfiles
 - https://github.com/nono/dotfiles
 - http://stackoverflow.com/questions/171563/whats-in-your-zshrc

@@ -6,7 +6,7 @@ alias du='du -h'
 alias h='history -iD'
 
 # ls
-alias ls='ls --color=auto --human-readable --classify --group-directories-first'
+alias ls='ls -G -F -h'
 alias l='ls -C'
 alias ll='ls -l'
 alias la='ls --almost-all'

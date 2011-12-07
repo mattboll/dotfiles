@@ -16,9 +16,14 @@
     rmm  = !git ls-files -d -z | xargs -0 git-rm && git status                      # supprimer les fichiers marqués
                                                                                     # comme effacés.
     climerge = mergetool -t diffmerge
+	tree = log --oneline --graph --decorate --all
 [user]
 	email = cedric@gatay.fr
 	name = Cedric Gatay
 [mergetool "diffmerge"]
-  cmd = diffmerge.sh --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"
-	trustExitCode = false
+	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[merge]
+	tool = diffmerge
+[mergetool]
+	keepBackup = false

@@ -44,11 +44,9 @@ alias st='git status'
 alias svnpull='git svnpull'
 alias svnpush='git svnpush'
 alias climerge='git climerge'
+alias pullr='git pull --rebase'
+alias pull='git pull'
+alias push='git push'
 
 # history grep
 alias hist="history | grep "
-
-# finally we source host specific aliases
-if [ -f ~/.zsh/aliases.${HOST} ]; then
-  source ~/.zsh/aliases.${HOST};
-fi

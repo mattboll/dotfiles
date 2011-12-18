@@ -1,5 +1,9 @@
 # open the file or ask to open it with sudo if write-protected
-local opener=xdg-open
+local opener=xdg-open;
+# if open exists (os x opener), use it
+if [ -f /usr/bin/open ]; then
+    opener=open;
+fi;
 
 if [[ -a "$1" ]]; then
   if [[ -w "$1" ]]; then

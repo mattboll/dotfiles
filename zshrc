@@ -5,13 +5,13 @@
 # https://github.com/ryanb/dotfiles
 # Ubuntu: /etc/zsh/newuser.zshrc.recommended
 
-source ~/.zsh/config
+source ~/.zsh/config.common
 # we source host specific config
 if [ -f ~/.zsh/config.${HOST} ]; then
   source ~/.zsh/config.${HOST};
 fi
 source ~/.zsh/completion
-source ~/.zsh/aliases
+source ~/.zsh/aliases.common
 # we source host specific aliases
 if [ -f ~/.zsh/aliases.${HOST} ]; then
   source ~/.zsh/aliases.${HOST};

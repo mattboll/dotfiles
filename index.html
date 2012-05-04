@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Dotfiles by CedricGatay</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Dotfiles</h1>
+        <h2>Config files for zsh and such (heavily commented, when needed)</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/CedricGatay/dotfiles/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/CedricGatay/dotfiles/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/CedricGatay/dotfiles" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>= My Dot Files
+Forked from tomsquest's dotfiles, thanks a lot for the working base.</p>
+
+<p>My config files, heavily commented for the most part (Zsh).</p>
+
+<p>== Installation</p>
+
+<p>git clone <a href="mailto:git@github.com">git@github.com</a>:tomsquest/dotfiles.git ~/.dotfiles
+  cd ~/.dotfiles
+  rake install</p>
+
+<p>== Features</p>
+
+<p>=== ZSH</p>
+
+<p>Heavily commented ZSH configuration : config, completion, prompt, key bindings...</p>
+
+<p>=== Bashrc</p>
+
+<p>Old and not so portable bashrc file, a lot of proprietary path and aliases. I have to work on it to make it versatile.</p>
+
+<p>==== Prompt</p>
+
+<p>The prompt is simple and effective. There is:</p>
+
+<ul>
+<li>A separator line between each command</li>
+<li>The path is truncated if too long for the terminal width</li>
+<li>The return code of the last executed command is displayed</li>
+<li>The Git status is displayed at the right of the screen (thanks to <a href="https://github.com/olivierverdier/zsh-git-prompt">https://github.com/olivierverdier/zsh-git-prompt</a>)</li>
+<li>Prompt color turns red when root, green otherwise. Host color turns cyan when remoting, green otherwise.</li>
+</ul><p>Example</p>
+
+<p>tom@tom 06:42:21 ~/.dotfiles/zsh --------
+  $                               (master…)</p>
+
+<p>==== Completions</p>
+
+<ul>
+<li>Bundler</li>
+<li>Capistrano</li>
+<li>Gem</li>
+<li>Rake</li>
+<li>Rvm</li>
+<li>Maven</li>
+</ul><p>==== Functions</p>
+
+<ul>
+<li>o : use xdg-open to open the file with the appropriate program and ask for sudo if root privileges needed</li>
+<li>mcd : mkdir + cd to it</li>
+<li>last_modified : used in Rake and Capistrano completion to update the task caches</li>
+</ul><p>=== ACK-GREP</p>
+
+<p>Ruby/Haml/Sass configuration for Ack-grep (aliased 'ack').
+ACK is a powerfull replacement for grep, written for developpers (<a href="http://betterthangrep.com/">http://betterthangrep.com/</a>)</p>
+
+<p>=== GIT</p>
+
+<p>A mostly-complete gitignore.</p>
+
+<p>== Sources</p>
+
+<ul>
+<li><a href="https://github.com/tomsquest/dotfiles">https://github.com/tomsquest/dotfiles</a></li>
+<li><a href="https://github.com/ryanb/dotfiles">https://github.com/ryanb/dotfiles</a></li>
+<li><a href="https://github.com/nono/dotfiles">https://github.com/nono/dotfiles</a></li>
+<li><a href="http://stackoverflow.com/questions/171563/whats-in-your-zshrc">http://stackoverflow.com/questions/171563/whats-in-your-zshrc</a></li>
+<li>Ubuntu: /etc/zsh/newuser.zshrc.recommended</li>
+<li><a href="http://zsh.sourceforge.net/Doc/Release/index-frame.html">http://zsh.sourceforge.net/Doc/Release/index-frame.html</a></li>
+<li>Git prompt: <a href="https://github.com/olivierverdier/zsh-git-prompt">https://github.com/olivierverdier/zsh-git-prompt</a>
+</li>
+<li>ZSH Prompt horizontal line: <a href="http://aperiodic.net/phil/prompt/">http://aperiodic.net/phil/prompt/</a>
+</li>
+<li>many others...</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>

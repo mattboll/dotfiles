@@ -1,6 +1,4 @@
-if [ -f /usr/local/Cellar/coreutils/8.12/aliases ]; then
-	source /usr/local/Cellar/coreutils/8.12/aliases;
-fi;
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 #Android tools
 PATH=~/android-sdk-mac_86/1.4-liquid-superboot:~/android-sdk-mac_86/tools:~/android-sdk-mac_86/platform-tools:$PATH
 #Common paths
@@ -9,7 +7,9 @@ PATH=~/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PAT
 PATH=/usr/local/Cellar/ruby/1.9.3-p194/bin:$PATH
 #Utils paths
 PATH=/opt/glassfishv3/glassfish/bin:$PATH
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export PATH;
+export MANPATH;
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/Current.jdk/Contents/Home
 # List of directories we can cd to from anywhere
 export CDPATH=.:~/Development/

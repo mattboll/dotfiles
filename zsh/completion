@@ -55,3 +55,5 @@ zstyle ':completion:*:*:mvn:*:options' auto-description '%d'
 zstyle ':completion:*:*:mvn:*:descriptions' format $'\e[1m -- %d --\e[22m'
 zstyle ':completion:*:*:mvn:*:messages' format $'\e[1m -- %d --\e[22m'
 zstyle ':completion:*:*:mvn:*:warnings' format $'\e[1m -- No matches found --\e[22m'
+zstyle ':completion:*:*:git:*' script /usr/local/etc/bash_completion.d/git-completion.bash
+

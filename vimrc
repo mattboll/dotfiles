@@ -448,3 +448,6 @@ endif
 " Jump to the last position when reopening a file
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized

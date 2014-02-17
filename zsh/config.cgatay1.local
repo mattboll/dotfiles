@@ -1,15 +1,19 @@
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 #Android tools
-PATH=~/android-sdk-mac_86/1.4-liquid-superboot:~/android-sdk-mac_86/tools:~/android-sdk-mac_86/platform-tools:$PATH
+#PATH=~/android-sdk-mac_86/1.4-liquid-superboot:~/android-sdk-mac_86/tools:~/android-sdk-mac_86/platform-tools:$PATH
+PATH=/Applications/Android\ Studio.app/sdk/platform-tools/:$PATH
 #Common paths
 PATH=~/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
 #Ruby paths
-PATH=/usr/local/Cellar/ruby/1.9.3-p194/bin:$PATH
+PATH=$(brew --prefix ruby)/bin:$PATH
 #Utils paths
 PATH=/opt/glassfishv3/glassfish/bin:$PATH
+#NPM paths
+PATH=/usr/local/share/npm/bin:$PATH
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export PATH;
 export MANPATH;
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/Current.jdk/Contents/Home
 # List of directories we can cd to from anywhere
 export CDPATH=.:~/Development/
+export JAVA_TOOL_OPTIONS='-Djava.awt.headless=true'

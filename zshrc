@@ -20,3 +20,6 @@ source ~/.zsh/bindkey
 source ~/.zsh/prompt
 source ~/.zsh/rvm
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/cgatay/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "/Users/cgatay/.gvm/bin/gvm-init.sh"

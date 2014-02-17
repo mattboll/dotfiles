@@ -323,3 +323,6 @@ MAVEN_OPTS="-Xmx1536m -Xms512m"
 export MAVEN_OPTS
 GRAILS_HOME=/opt/local/share/java/grails
 export GRAILS_HOME
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/cgatay/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "/Users/cgatay/.gvm/bin/gvm-init.sh"

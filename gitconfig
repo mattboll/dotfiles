@@ -40,3 +40,5 @@
 	helper = osxkeychain
 [push]
 	default = current
+[achievement]
+	upload = true

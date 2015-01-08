@@ -42,3 +42,8 @@
 	default = current
 [achievement]
 	upload = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[pull]
+	rebase = true

@@ -45,6 +45,9 @@
     rp = remote prune origin
 	merge-log = "!f() { git log --stat \"$1^..$1\"; }; f"
  
+[core]
+    pager = less -+$LESS -FRX
+
 [rerere]
 	enabled = true
 [push]

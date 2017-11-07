@@ -21,30 +21,30 @@
     rh = reset --hard
     rh1 = reset HEAD^ --hard
     rh2 = reset HEAD^^ --hard
-    
+
     # basic shortcuts
     cp = cherry-pick
     cl = clone
     diff = diff --word-diff
     dc = diff --cached
-    
+
     # stash shortcuts
     sl = stash list
     sa = stash apply
     ss = stash save
-   
+
     # log related - thanks to @mwd410
-    l = log 
+    l = log
     lh = log --graph
     la = !git lh --date-order --all 2> /dev/null
     lb = log --graph --simplify-by-decoration
-    lba = !git lb --all 
+    lba = !git lb --all
     h = !git --no-pager log --graph -n 15
     a = !git --no-pager la -n 15
 
     rp = remote prune origin
 	merge-log = "!f() { git log --stat \"$1^..$1\"; }; f"
- 
+
 [core]
     pager = less -+$LESS -FRX
 

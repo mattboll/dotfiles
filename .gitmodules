@@ -1,6 +1,6 @@
 [submodule "zshrc"]
 	path = zshrc
-	url = git@github.com:mattboll/zshrc.git
+	url = https://github.com/mattboll/zshrc.git
 [submodule "vimrc"]
 	path = vimrc
-	url = git@github.com:mattboll/vimrc.git
+	url = https://github.com/mattboll/vimrc.git
